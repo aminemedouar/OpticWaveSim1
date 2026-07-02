@@ -36,7 +36,7 @@ REVENUE SHARING DEFINITION:
 
 LICENSE CONTACT:
 For commercial licensing inquiries:
-Email: amine.medouar@example.com
+Email: aminemedouar50@gmail.com
 Organization: OpticWaveSim Commercial Licensing
 
 ENFORCEMENT:
