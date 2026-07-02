@@ -192,7 +192,7 @@ Licensor grants Licensee non-exclusive (or exclusive with negotiation) license t
 
 **For Commercial Licensing:**
 
-📧 **Email:** amine.medouar@example.com  
+📧 **Email:** aminemedouar50@gmail.com
 📱 **Phone:** [Your Phone Number]  
 🌐 **Website:** [Your Website]  
 💬 **GitHub Issues:** https://github.com/aminemedouar/OpticWaveSim1/issues
