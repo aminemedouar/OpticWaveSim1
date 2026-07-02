@@ -153,7 +153,7 @@ Licensor grants Licensee non-exclusive (or exclusive with negotiation) license t
 ## 🤝 How to Get Started
 
 ### Step 1: Initial Contact
-📧 **Email:** amine.medouar@example.com  
+📧 **Email:** aminemedouar50@gmail.com  
 📝 **Subject:** OpticWaveSim Commercial License Inquiry
 
 **Include:**
