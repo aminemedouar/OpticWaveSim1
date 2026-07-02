@@ -324,7 +324,7 @@ A: 30-day free trial available upon request for qualified enterprises.
 
 **Making Optical Simulation Accessible & Profitable**
 
-📧 amine.medouar@example.com | 🌐 opticwavesim.io
+📧 aminemedouar50@gmail.com | 🌐 opticwavesim.io
 
 ---
 
