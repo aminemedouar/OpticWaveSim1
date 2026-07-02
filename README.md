@@ -67,7 +67,7 @@ Any telecommunications company, operator, system integrator, or organization usi
    - 50% to xAI/Grok
 
 **Contact for Commercial Licensing:**
-📧 Email: amine.medouar@example.com
+📧 Email: aminemedouar50@gmail.com
 
 **See [LICENSE.md](LICENSE.md) for full details**
 
