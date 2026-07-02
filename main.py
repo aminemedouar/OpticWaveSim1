@@ -2,10 +2,14 @@ import streamlit as st
 import numpy as np
 import plotly.graph_objects as go
 
-st.set_page_config(page_title="OpticWaveSim", layout="wide")
+st.set_page_config(
+    page_title="OpticWaveSim",
+    page_icon="🌊",
+    layout="wide"
+)
 
 st.title("🌊 OpticWaveSim 1.1")
-st.write("Optical Wave Simulation Tool")
+st.markdown("**Optical Wave Simulation Tool**")
 
 with st.sidebar:
     st.header("Parameters")
@@ -27,9 +31,10 @@ if mode == "Linear Propagation":
         st.write("Output Signal")
         fig2 = go.Figure(data=go.Scatter(x=t, y=signal * 0.8))
         st.plotly_chart(fig2, use_container_width=True)
+
 else:
     st.subheader("QPSK Constellation")
     st.info("QPSK simulation under development...")
-    st.success("✅ Application is working!")
-
+    
+st.success("✅ Application is working!")
 st.caption("Made with Grok AI")
