@@ -2,32 +2,39 @@ import streamlit as st
 import numpy as np
 import plotly.graph_objects as go
 
-st.set_page_config(page_title="OpticWaveSim", layout="wide", page_icon="🌊")
+st.set_page_config(
+    page_title="OpticWaveSim",
+    layout="wide",
+    page_icon="🌊"
+)
 
 st.title("🌊 OpticWaveSim 1.1")
-st.write("Simulation d'ondes optiques")
+st.markdown("### Optical Wave Simulation Tool")
 
 with st.sidebar:
-    st.header("Paramètres")
-    L = st.slider("Longueur de la fibre (km)", 1, 1000, 80)
-    alpha = st.slider("Atténuation (dB/km)", 0.0, 1.0, 0.2)
-    mode = st.radio("Mode de simulation", ["Propagation Linéaire", "QPSK"])
+    st.header("Parameters")
+    L = st.slider("Fiber Length (km)", 1, 1000, 80)
+    alpha = st.slider("Attenuation (dB/km)", 0.0, 1.0, 0.2)
+    mode = st.radio("Simulation Mode", ["Linear Propagation", "QPSK Constellation"])
 
-if mode == "Propagation Linéaire":
-    st.subheader("Propagation Linéaire")
+if mode == "Linear Propagation":
+    st.subheader("Linear Propagation")
     t = np.linspace(-50, 50, 1000)
     signal = np.exp(-(t**2) / 10)
     
     col1, col2 = st.columns(2)
     with col1:
-        st.write("Signal d'entrée")
+        st.write("Input Signal")
         fig1 = go.Figure(data=go.Scatter(x=t, y=signal))
         st.plotly_chart(fig1, use_container_width=True)
+    
     with col2:
-        st.write("Signal de sortie")
+        st.write("Output Signal")
         fig2 = go.Figure(data=go.Scatter(x=t, y=signal * 0.8))
         st.plotly_chart(fig2, use_container_width=True)
+
 else:
-    st.subheader("Constellation QPSK")
-    st.info("Simulation QPSK en cours de développement...")
-    st.success("Application fonctionnelle !")
+    st.subheader("QPSK Constellation")
+    st.info("QPSK simulation under development...")
+
+st.success("✅ Application is working!")
