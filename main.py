@@ -15,7 +15,7 @@ with st.sidebar:
     st.header("Parameters")
     L = st.slider("Fiber Length (km)", 1, 1000, 80)
     alpha = st.slider("Attenuation (dB/km)", 0.0, 1.0, 0.2)
-    mode = st.radio("Simulation Mode", ["Linear Propagation", "QPSK Constellation"])
+    mode = st.radio("Simulation Mode", )
 
 if mode == "Linear Propagation":
     st.subheader("Linear Propagation")
