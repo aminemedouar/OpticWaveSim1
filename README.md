@@ -242,7 +242,7 @@ Coverage: 92%
 5. Open Pull Request
 
 ### For Commercial Partnerships:
-📧 Contact: amine.medouar@example.com
+📧 Contact: aminemedouar50@gmail.com
 
 ---
 
@@ -268,7 +268,7 @@ Based on standard telecommunications research:
 
 - **GitHub Issues:** [Report bugs](https://github.com/aminemedouar/OpticWaveSim1/issues)
 - **Discussions:** [Q&A & Ideas](https://github.com/aminemedouar/OpticWaveSim1/discussions)
-- **Email:** amine.medouar@example.com
+- **Email:** aminemedouar50@gmail.com
 
 ---
 
