@@ -1,4 +1,4 @@
-🌊 # OpticWaveSim 1.1 - Advanced Optical Simulator
+# 🌊 OpticWaveSim 1.1 - Advanced Optical Simulator
 
 **The World's Best Open-Source Optical Wave Simulation Platform**
 
@@ -6,6 +6,7 @@
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-Proprietary%2FCommercial-red.svg)](LICENSE.md)
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://opticwavesim.streamlit.app)
+[![Docker](https://img.shields.io/badge/docker-ready-blue.svg)](Dockerfile)
 
 ---
 
@@ -15,7 +16,7 @@
 - Linear Propagation (Dispersion & Attenuation)
 - ASE Noise & BER Analysis
 - QPSK Modulation & Constellation
-- Nonlinear Effects (SPM, XPM)
+- Performance Benchmarks
 - Grok AI Assistant
 
 ✅ **Advanced Physics Engine**
@@ -42,6 +43,7 @@
 - PDF report generation
 - 92% code coverage (15/15 tests pass)
 - GitHub Actions CI/CD
+- Docker & Docker Compose ready
 - Production-ready deployment
 
 ---
@@ -85,6 +87,19 @@ streamlit run main.py
 ```
 
 Access at: `http://localhost:8501`
+
+### Docker Setup
+
+```bash
+# Build image
+docker build -t opticwavesim:1.1 .
+
+# Run container
+docker run -p 8501:8501 opticwavesim:1.1
+
+# Or use Docker Compose
+docker-compose up -d
+```
 
 ### Streamlit Cloud Deployment
 
@@ -169,6 +184,7 @@ print(f"BER @ {osnr_db} dB: {ber:.2e}")
 | **Visualization** | Plotly |
 | **PDF Export** | ReportLab |
 | **AI Integration** | Grok (xAI) |
+| **Containerization** | Docker, Docker Compose |
 | **CI/CD** | GitHub Actions |
 | **Testing** | Pytest |
 
@@ -178,21 +194,22 @@ print(f"BER @ {osnr_db} dB: {ber:.2e}")
 
 ```
 OpticWaveSim1/
-├── main.py                    # Streamlit application
-├── optics_engine.py          # Physics & simulation core
-├── grok_assistant.py         # AI optimization engine
-├── utils.py                  # Utility functions
-├── i18n.py                   # Multi-language support
-├── requirements.txt          # Dependencies
-├── LICENSE.md                # Commercial license
-├── README.md                 # This file
-├── DEPLOYMENT.md             # Deployment guide
-├── tests/                    # Unit tests
+├── main.py                      # Streamlit application
+├── requirements.txt             # Python dependencies
+├── Dockerfile                   # Docker image config
+├── docker-compose.yml           # Docker Compose config
+├── streamlit.app                # Streamlit Cloud config
+├── .streamlit/config.toml       # Streamlit config
+├── .gitignore                   # Git ignore rules
+├── LICENSE.md                   # Commercial license
+├── README.md                    # This file
+├── DEPLOYMENT.md                # Deployment guide
+├── tests/                       # Unit tests
 │   ├── test_optics.py
 │   └── __init__.py
 └── .github/
     └── workflows/
-        └── ci_cd.yml         # GitHub Actions
+        └── ci_cd.yml            # GitHub Actions
 ```
 
 ---
@@ -216,6 +233,40 @@ Results:
 
 Coverage: 92%
 ```
+
+---
+
+## 🚀 Deployment Options
+
+### Local Development
+```bash
+streamlit run main.py
+```
+
+### Docker
+```bash
+docker build -t opticwavesim:1.1 .
+docker run -p 8501:8501 opticwavesim:1.1
+```
+
+### Docker Compose
+```bash
+docker-compose up -d
+```
+
+### Streamlit Cloud
+- Push to GitHub
+- Connect via Streamlit Cloud dashboard
+- Auto-deploys on every push
+
+### Full Deployment Guide
+See [DEPLOYMENT.md](DEPLOYMENT.md) for complete instructions including:
+- Local development setup
+- Streamlit Cloud deployment
+- Docker & Docker Compose
+- GitHub Actions CI/CD
+- Troubleshooting
+- Security best practices
 
 ---
 
@@ -304,16 +355,16 @@ See [LICENSE.md](LICENSE.md) for complete terms.
 [![GitHub Stars](https://img.shields.io/github/stars/aminemedouar/OpticWaveSim1?style=social)](https://github.com/aminemedouar/OpticWaveSim1)
 [![GitHub Forks](https://img.shields.io/github/forks/aminemedouar/OpticWaveSim1?style=social)](https://github.com/aminemedouar/OpticWaveSim1)
 
-**Last Update:** 2026-07-01  
+**Last Update:** 2026-07-06  
 **Version:** 1.1 (Production Ready)  
 **Status:** ✅ Active Development
 
 ---
 
-<div align=\"center\">
+<div align="center">
 
 ### 🌊 OpticWaveSim: The Future of Open-Source Optical Simulation 🚀
 
-**[Launch App](https://opticwavesim.streamlit.app)** • **[GitHub](https://github.com/aminemedouar/OpticWaveSim1)** • **[License](LICENSE.md)**
+**[Launch App](https://opticwavesim.streamlit.app)** • **[GitHub](https://github.com/aminemedouar/OpticWaveSim1)** • **[License](LICENSE.md)** • **[Deploy](DEPLOYMENT.md)**
 
 </div>
